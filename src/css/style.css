@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+    .principal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: 1200px;
+        height: 400px;
+        margin: 100px auto 0;
+        border-radius: 20px;
+        background-color: #121212;
+    }
+
+                /*--------------------  Configuração - Section Controle  --------------------*/
+
+        .controle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            padding: 10px 30px;
+            font-weight: 400;
+            color: rgba(255,255,255,0.8);
+        }
+
+            .controle img {
+                width: 90px;
+            } 
+
+            .checkbox__label {
+                display: flex;
+                gap: 15px;
+            }
+
+                .swicther {
+                    display: flex;
+                    width: 50px;
+                    height: 25px;
+                    padding: 4px;
+                    border-radius: 50px;
+                    transition: 600ms;
+                    background-color: #555555;
+                }
+                    .swicther--active {
+                        justify-content: flex-end;
+                        background-color: #006eff;
+                    }
+
+                    .swicther__button {
+                        height: 100%;
+                        aspect-ratio: 1/1;
+                        background-color: white;
+                        border-radius: 25px;
+                    }
+
+                /*--------------------  Configuração - Section teclas  --------------------*/
+
+        .teclas {
+            display: flex;
+            width: 100%;
+            height: 300px;
+            padding: 10px 40px;
+            border-radius: 15px;
+            background-color: #181818;
+        }
+
+            .key {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                position: relative;
+                padding-bottom: 8px;
+                user-select: none;
+            }
+
+                .key span {
+                    position: absolute;
+                    font-weight: 700;
+                }
+
+            .white {
+                flex-grow: 1;
+                margin-left: -18px;
+                z-index: 1;
+                border-radius: 5px;
+                border-bottom: solid 8px #666666;
+                color: rgba(0,0,0,0.3);
+                background-color: white;
+            }
+
+            .black {
+                width: 40px;
+                height: 150px;
+                margin-left: -20px;
+                z-index: 2;
+                border-radius: 0 0 5px 5px;
+                border-bottom: solid 8px #222;
+                color: rgba(255,255,255,0.3);
+                background: linear-gradient(black,#333);
+            }
+
+            .teclas .white:nth-child(1) {
+                margin-left: 0px;
+            }
+
+            .teclas .white:nth-child(5) {
+                margin-right: 20px;
+            }
+
+            .teclas .white:nth-child(12) {
+                margin-right: 20px;
+            }
+
+            .teclas .white:nth-child(17) {
+                margin-right: 20px;
+            }
+
+            .teclas .white:nth-child(24) {
+                margin-right: 20px;
+            }
+
+            .teclas .white:nth-child(29) {
+                margin-right: 20px;
+            }
+
+                /*--------------------  Alterações JavaScript  --------------------*/
+
+        .black-pressed {
+            height: 148px;
+            border-bottom: none;
+            background: linear-gradient(#222222, black);
+        }
+
+        .desabled-keys span{
+            opacity: 0;
+        }
