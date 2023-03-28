@@ -4,7 +4,7 @@ Projeto feito para entender melhor o uso de tamplete string, além de mapeamento
 
 Link do projeto. [Clique aqui.](https://cmp-piano-online.netlify.app/)
 
-<a href="https://im.ge/i/IO0HOr"><img src="https://i.im.ge/2023/03/28/IO0HOr.teclado-capa.jpg" alt="teclado_capa" border="0" /></a>
+![piano](https://i.im.ge/2023/03/28/IO5lmS.piano-menor.jpg)
 
 ---
 ## Sobre o projeto
