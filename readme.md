@@ -21,17 +21,3 @@ O código não demanda muita coisa para rodar em seu computador, apenas a clonag
 ```
 https://github.com/matheusandraderibeiro/cmp-projeto-piano.git
 ```
-
----
-
-<img src="src/img/logo_branca (2).png" alt="logo" > 
-
-<style>
- img {
-    width: 200px;
-    margin-top: 50px;
-    margin-left: 50%;
-    transform : translate(-50%)
- }
-</style>
-
