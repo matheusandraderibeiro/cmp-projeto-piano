@@ -74,7 +74,7 @@ const objetoTeclas = {
     ",": () => quandoATeclaNaoEstaPrecionada (teclas[33]),
     "l": () => quandoATeclaNaoEstaPrecionada (teclas[34]),
     ".": () => quandoATeclaNaoEstaPrecionada (teclas[35])
-    }
+}
 
 teclas.forEach ((tecla) => {
     tecla.addEventListener ("mousedown", () => quandoATeclaEstaPrecionada (tecla));
@@ -82,12 +82,12 @@ teclas.forEach ((tecla) => {
 });
 
 document.addEventListener ("keydown", (event) => {
-    //event.preventDefault();
+    event.preventDefault();
     objetoTeclasPrecionadas[event.key]();
 });
 
 document.addEventListener ("keyup", (event) => {
-    //event.preventDefault();
+    event.preventDefault();
     objetoTeclas[event.key]();
 });
 
